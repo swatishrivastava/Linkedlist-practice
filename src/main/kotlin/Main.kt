@@ -1,7 +1,14 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    //create linkedlist
+    var list = LinkedList()
+    list.addNodeInLinkedList(Node(1, null))
+    list.addNodeInLinkedList(Node(2, null))
+    list.addNodeInLinkedList(Node(3, null))
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    println("Our list = ${list.head.toString()}")
+
+
+    var rever = reverseLinkedList(list.head!!)
+
+    println("Reverse list = ${rever.toString()}")
 }
